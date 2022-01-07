@@ -1,3 +1,5 @@
+<% if enhanced_cart.length > 0 %>
+
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +52,7 @@
   </div>
 
 </section>
+
+<% else %>
+  <h2 class="empty">Cart is empty, go <%= link_to  "home", "/" %> to add items. </h2>
+<% end %>
